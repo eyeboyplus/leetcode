@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.9)
+
+project(test)
+
+add_subdirectory(gtest)
+
+include_directories(gtest/googletest/include)
+include_directories(gtest/googlemock/include)
+include_directories(./../src)
+
+add_executable(runTests gtest_main.cpp ../src/binary_tree_inorder_traverse.hpp binary_tree_inorder_traverse_test.cpp ../src/regular_expression_matching.hpp regular_expression_matching_test.cpp)
+
+target_link_libraries(runTests gtest gtest_main)
