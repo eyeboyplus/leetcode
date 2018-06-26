@@ -4,6 +4,8 @@
 #include <gtest/gtest.h>
 #include "binary_tree_inorder_traverse.hpp"
 
+using namespace binary_tree_inorder_traverse;
+
 class BinTreeInorderTraverseTest : public testing::Test {
 protected:
     void SetUp() override {

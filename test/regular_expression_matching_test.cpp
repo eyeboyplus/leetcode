@@ -5,11 +5,12 @@
 
 #include "regular_expression_matching.hpp"
 
+using namespace regular_expression_matching;
+
 TEST(regular_expression_matching_test, solution_1) {
     EXPECT_FALSE(solution_1("aa", "a"));
     EXPECT_TRUE(solution_1("aa", "a*"));
     EXPECT_TRUE(solution_1("ab", ".*"));
     EXPECT_TRUE(solution_1("aab", "c*a*b"));
     EXPECT_FALSE(solution_1("mississippi", "mis*is*p*"));
-    EXPECT_TRUE(false);
 }
