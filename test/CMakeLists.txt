@@ -17,6 +17,7 @@ add_executable(runTests
         integer_to_roman_test.cpp
         roman_to_integer_test.cpp
         longest_common_prefix_test.cpp
+        three_sum_closest_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
