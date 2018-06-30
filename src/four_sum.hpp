@@ -26,6 +26,8 @@ using namespace std;
     ]
  */
 namespace four_sum {
+
+    // O(n^3), O(1)
     vector<vector<int>> solution(vector<int> &nums, int target) {
         vector<vector<int>> result;
 
