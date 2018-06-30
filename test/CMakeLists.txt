@@ -21,6 +21,7 @@ add_executable(runTests
         letter_combinations_of_a_phone_number_test.cpp
         three_sum_test.cpp
         four_sum_test.cpp
+        remove_n_th_node_from_end_of_list.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
