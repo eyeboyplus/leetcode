@@ -24,6 +24,7 @@ add_executable(runTests
         remove_n_th_node_from_end_of_list.cpp
         valid_parentheses_test.cpp
         merge_two_sorted_lists_test.cpp
+        generate_parentheses_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
