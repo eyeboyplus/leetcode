@@ -26,6 +26,7 @@ add_executable(runTests
         merge_two_sorted_lists_test.cpp
         generate_parentheses_test.cpp
         merge_k_sorted_lists_test.cpp
+        swap_nodes_in_pairs_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
