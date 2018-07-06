@@ -29,6 +29,7 @@ add_executable(runTests
         swap_nodes_in_pairs_test.cpp
         reverse_nodes_in_k_group_test.cpp
         remove_duplicates_from_sorted_array_test.cpp
+        remove_element_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
