@@ -31,6 +31,7 @@ add_executable(runTests
         remove_duplicates_from_sorted_array_test.cpp
         remove_element_test.cpp
         implement_str_str_test.cpp
+        divide_two_integers_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
