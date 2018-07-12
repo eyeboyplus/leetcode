@@ -32,7 +32,8 @@ add_executable(runTests
         remove_element_test.cpp
         implement_str_str_test.cpp
         divide_two_integers_test.cpp
-        substring_with_concatenation_of_all_words.cpp
+        substring_with_concatenation_of_all_words_test.cpp
+        next_permutation_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
