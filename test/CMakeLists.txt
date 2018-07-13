@@ -34,6 +34,7 @@ add_executable(runTests
         divide_two_integers_test.cpp
         substring_with_concatenation_of_all_words_test.cpp
         next_permutation_test.cpp
+        longest_valid_parentheses_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
