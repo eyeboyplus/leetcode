@@ -35,6 +35,8 @@ add_executable(runTests
         substring_with_concatenation_of_all_words_test.cpp
         next_permutation_test.cpp
         longest_valid_parentheses_test.cpp
+        search_in_rotated_sorted_array_test.cpp
+        find_first_and_last_position_of_element_in_sorted_array_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
