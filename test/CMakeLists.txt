@@ -39,6 +39,8 @@ add_executable(runTests
         find_first_and_last_position_of_element_in_sorted_array_test.cpp
         search_insert_position_test.cpp
         valid_sudoku_test.cpp
+        sudoku_solver_test.cpp
+        count_and_say_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
