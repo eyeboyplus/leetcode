@@ -19,17 +19,23 @@
 namespace combination_sum {
     using namespace std;
 
+    // 回溯实现
     void recursive_sum(vector<int> &candidates, int target,
                      vector<int> &path, vector<vector<int>> &ret, int begin) {
+        // i.e., path数组中的值之和等于target
         if(target == 0) {
             ret.push_back(path);
             return;
         }
 
         int len = candidates.size();
+        // candidates 数组为升序，begin之前的数无须再参加操作，去重
         for(int i = begin; i < len && target >= candidates[i]; ++i) {
+            // candidates[i]值小于等于target,可能是构成target的数值，加入path中
             path.push_back(candidates[i]);
+            // 递归计算剩余值，如果组合之和等于target，这些组合已经加入到结果集ret中
             recursive_sum(candidates, target - candidates[i], path, ret, i);
+            // 从组合中弹出上次计算的值，准备尝试下一个
             path.pop_back();
         }
     }
