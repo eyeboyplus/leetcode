@@ -42,6 +42,7 @@ add_executable(runTests
         sudoku_solver_test.cpp
         count_and_say_test.cpp
         combination_sum_test.cpp
+        combination_sum_ii_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
