@@ -43,6 +43,7 @@ add_executable(runTests
         count_and_say_test.cpp
         combination_sum_test.cpp
         combination_sum_ii_test.cpp
+        first_missing_positive_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
