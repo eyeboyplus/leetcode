@@ -16,4 +16,8 @@ TEST(first_missing_positive, solution) {
     EXPECT_EQ(solution(vec2), 2);
     EXPECT_EQ(solution(vec3), 1);
     EXPECT_EQ(solution(vec4), 6);
+    EXPECT_EQ(solution_1(vec1), 3);
+    EXPECT_EQ(solution_1(vec2), 2);
+    EXPECT_EQ(solution_1(vec3), 1);
+    EXPECT_EQ(solution_1(vec4), 6);
 }
