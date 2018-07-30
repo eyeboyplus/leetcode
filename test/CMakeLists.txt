@@ -45,6 +45,7 @@ add_executable(runTests
         combination_sum_ii_test.cpp
         first_missing_positive_test.cpp
         trapping_rain_water_test.cpp
+        multiply_strings_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
