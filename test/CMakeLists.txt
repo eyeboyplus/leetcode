@@ -47,6 +47,7 @@ add_executable(runTests
         trapping_rain_water_test.cpp
         multiply_strings_test.cpp
         jump_game_ii_test.cpp
+        permutations_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
