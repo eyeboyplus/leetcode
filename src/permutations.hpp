@@ -30,22 +30,21 @@ namespace permutations {
             result.push_back(path);
             return;
         }
-
         for(vector<int>::iterator iter = nums.begin(); iter != nums.end(); iter++) {
             int num = *iter;
             path.push_back(num);
+            // 剔除当前数，其他数当做下一层数据
             vector<int> temp;
             if(iter - 1 >= nums.begin())
                 temp.insert(temp.end(), nums.begin(), iter);
             if(iter + 1 <= nums.end())
                 temp.insert(temp.end(), iter + 1, nums.end());
-
+            // 递归
             recursive(temp, path, result);
 
             path.pop_back();
         }
     }
-
     vector<vector<int>> solution(vector<int> &nums) {
         vector<int> path;
         vector<vector<int>> ret;
