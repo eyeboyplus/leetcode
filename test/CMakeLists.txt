@@ -48,6 +48,7 @@ add_executable(runTests
         multiply_strings_test.cpp
         jump_game_ii_test.cpp
         permutations_test.cpp
+        permutations_ii_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
