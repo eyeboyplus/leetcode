@@ -49,6 +49,7 @@ add_executable(runTests
         jump_game_ii_test.cpp
         permutations_test.cpp
         permutations_ii_test.cpp
+        rotate_image_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
