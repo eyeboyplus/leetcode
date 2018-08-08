@@ -50,6 +50,7 @@ add_executable(runTests
         permutations_test.cpp
         permutations_ii_test.cpp
         rotate_image_test.cpp
+        group_anagrams_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
