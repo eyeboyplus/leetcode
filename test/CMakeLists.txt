@@ -46,6 +46,7 @@ add_executable(runTests
         first_missing_positive_test.cpp
         n_queens_test.cpp
         n_queens_ii_test.cpp
+        maximum_subarray_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
