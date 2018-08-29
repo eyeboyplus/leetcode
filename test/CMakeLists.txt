@@ -44,11 +44,9 @@ add_executable(runTests
         combination_sum_test.cpp
         combination_sum_ii_test.cpp
         first_missing_positive_test.cpp
-<<<<<<< HEAD
         n_queens_test.cpp
         n_queens_ii_test.cpp
         maximum_subarray_test.cpp
-=======
         trapping_rain_water_test.cpp
         multiply_strings_test.cpp
         jump_game_ii_test.cpp
@@ -57,7 +55,7 @@ add_executable(runTests
         rotate_image_test.cpp
         group_anagrams_test.cpp
         pow_x_n_test.cpp
->>>>>>> 2a16e0cef4af73df4eb93685721cdc8dca82b657
+        jump_game_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
