@@ -57,6 +57,7 @@ add_executable(runTests
         pow_x_n_test.cpp
         jump_game_test.cpp
         merge_intervals_test.cpp
+        insert_interval_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
