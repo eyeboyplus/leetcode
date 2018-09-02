@@ -59,6 +59,7 @@ add_executable(runTests
         merge_intervals_test.cpp
         insert_interval_test.cpp
         length_of_last_word_test.cpp
+        sort/quick_sort_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
