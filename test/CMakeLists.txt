@@ -60,6 +60,7 @@ add_executable(runTests
         insert_interval_test.cpp
         length_of_last_word_test.cpp
         sort/quick_sort_test.cpp
+        spiral_matrix_ii_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)

@@ -7,7 +7,7 @@
 
 #include <vector>
 #include <ctime>
-#include <cstdlib>g
+#include <cstdlib>
 
 namespace sort {
     using namespace std;
@@ -16,12 +16,6 @@ namespace sort {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
-    }
-
-    int randomized_partition(vector<int> &nums, int start, int end) {
-        int i = (std::srand(time(0)) % (end - start + 1)) + start;
-        swap(nums, i, end);
-        return partition(nums, start, end);
     }
 
     int partition(vector<int> &nums, int start, int end) {
@@ -35,6 +29,13 @@ namespace sort {
         swap(nums, end, i + 1);
 
         return i + 1;
+    }
+
+    int randomized_partition(vector<int> &nums, int start, int end) {
+        std::srand(time(0));
+        int i = (rand() % (end - start + 1)) + start;
+        swap(nums, i, end);
+        return partition(nums, start, end);
     }
 
     void quick_sort(vector<int> &nums, int start, int end) {
