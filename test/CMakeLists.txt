@@ -59,7 +59,7 @@ add_executable(runTests
         merge_intervals_test.cpp
         insert_interval_test.cpp
         length_of_last_word_test.cpp
-        sort/quick_sort_test.cpp
+        sort/sort_test.cpp
         spiral_matrix_ii_test.cpp
         )
 
