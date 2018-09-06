@@ -61,6 +61,8 @@ add_executable(runTests
         length_of_last_word_test.cpp
         sort/sort_test.cpp
         spiral_matrix_ii_test.cpp
+        permutation_sequence_test.cpp
+        rotate_list_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
