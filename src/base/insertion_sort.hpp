@@ -7,7 +7,7 @@
 
 #include <vector>
 
-namespace sort {
+namespace base {
     using namespace std;
     void insertion_sort(vector<int> &nums, int start, int end) {
         for(int i = start; i <= end; ++i) {

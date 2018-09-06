@@ -2,10 +2,10 @@
 // Created by eyeboy on 2018/9/2.
 //
 #include "gtest/gtest.h"
-#include "sort/quick_sort.hpp"
-#include "sort/insertion_sort.hpp"
+#include "base/quick_sort.hpp"
+#include "base/insertion_sort.hpp"
 
-using namespace sort;
+using namespace base;
 
 TEST(sort, quick_sort) {
     vector<int> vec1 = {1, 4, 5, 2, 3, 7};

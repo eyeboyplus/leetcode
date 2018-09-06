@@ -9,7 +9,7 @@
 #include <ctime>
 #include <cstdlib>
 
-namespace sort {
+namespace base {
     using namespace std;
 
     void swap(vector<int> &nums, int i, int j) {
