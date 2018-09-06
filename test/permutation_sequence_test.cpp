@@ -7,6 +7,6 @@
 using namespace permutation_sequence;
 
 TEST(permutation_sequence, solution) {
-    EXPECT_EQ(solution(3, 3), "213");
-    EXPECT_EQ(solution(4, 9), "2314");
+    EXPECT_EQ(solution_2(3, 3), "213");
+    EXPECT_EQ(solution_2(4, 9), "2314");
 }

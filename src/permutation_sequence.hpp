@@ -51,7 +51,7 @@ namespace permutation_sequence {
         }
     }
     // time limit exceeded
-    string solution(int n, int k) {
+    string solution_1(int n, int k) {
         vector<int> vec;
         for(int i = 1; i <= n; ++i)
             vec.push_back(i);
@@ -60,6 +60,27 @@ namespace permutation_sequence {
         int count = 0;
         recursive(vec, path, count, k, ret);
 
+        return ret;
+    }
+
+    string solution_2(int n, int k) {
+        vector<int> factorial(n, 1);
+        for(int i = 1; i < n; ++i) {
+            factorial[i] = factorial[i - 1] * i;
+        }
+
+        vector<char> nums;
+        for(int i = 1; i <= n; ++i)
+            nums.push_back('0' + i);
+
+        string ret;
+        int remainder = k - 1;
+        for(int i = n - 1; i >= 0; --i) {
+            int index = remainder / factorial[i];
+            ret.push_back(nums[index]);
+            nums.erase(nums.begin() + index);
+            remainder = remainder % factorial[i];
+        }
         return ret;
     }
 }
