@@ -64,6 +64,7 @@ add_executable(runTests
         permutation_sequence_test.cpp
         rotate_list_test.cpp
         unique_paths_test.cpp
+        unique_paths_ii_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
