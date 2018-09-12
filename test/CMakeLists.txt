@@ -68,6 +68,7 @@ add_executable(runTests
         minimum_path_sum_test.cpp
         valid_number_test.cpp
         plus_one_test.cpp
+        add_binary_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
