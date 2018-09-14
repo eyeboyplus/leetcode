@@ -69,6 +69,7 @@ add_executable(runTests
         valid_number_test.cpp
         plus_one_test.cpp
         add_binary_test.cpp
+        text_justification_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
