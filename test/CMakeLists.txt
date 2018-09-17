@@ -71,6 +71,7 @@ add_executable(runTests
         add_binary_test.cpp
         text_justification_test.cpp
         sqrt_x_test.cpp
+        climbing_stairs_test.cpp
         )
 
 target_link_libraries(runTests gtest gtest_main)
